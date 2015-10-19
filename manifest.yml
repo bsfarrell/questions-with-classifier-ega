@@ -11,7 +11,8 @@ declared-services:
     plan: sqldb_free
 
 applications:
-- memory: 512M
+- name: questions-with-classifier
+  memory: 512M
   path: questions-with-classifier-ega-war/target/questions-with-classifier-ega-war.zip
   services:
   - questions-classifier
